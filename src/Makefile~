@@ -1,0 +1,10 @@
+OBJ = uimain.o tokenizer.o history.o
+CFLAGS=-g -O3
+all: tokenizer
+tokenizer: $(OBJ)
+	cc -o tokenizer $(CFLAGS) $(OBJS) && rm -f *.o
+$(OBJS): tokenizer.h history.h
+clean:
+	rm -f *.o tokenizer
+run:tokenizer
+	./tokenizer
