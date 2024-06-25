@@ -1,6 +1,7 @@
 #ifndef _TOKENIZER_
 #define _TOKENIZER_
 
+#define MAX 100
 
 /* Return true (non-zero) if c is a whitespace characer
    ('\t' or ' ').  
